@@ -15,7 +15,7 @@
     }
 
     /* Project Section */
-   
+
 
     /* Certificate Section */
     .certificateCard:first-child {
@@ -91,17 +91,16 @@
         flex-direction: column;
         background-color: #8ad4e8;
         top: 5rem;
-        right: 0;
+        left: 1000px;
         height: 100vh;
-        width: 0;
-        padding: 40px 0;
+        width: 100%;
+        padding: 40px 30px;
         transition: 500ms ease;
         position: absolute;
     }
 
     .showNav {
-        width: 15rem;
-        padding: 40px 30px;
+        left: 560px;
     }
 
 
@@ -147,7 +146,7 @@
     }
 
     .card3:hover .cardDescription {
-        transform: translateY(-160px);
+        transform: translateY(-175px);
     }
 
     /* Contact Section */
@@ -186,9 +185,8 @@
     }
 
     .showNav {
-        width: 100%;
+        left: 0;
         align-items: center;
-        padding: 60px 30px;
         font-size: 1.7rem;
     }
 
@@ -216,6 +214,7 @@
     .aboutTitle h1 {
         text-align: center;
     }
+
     .aboutContainer {
         flex-direction: column;
     }
@@ -230,11 +229,11 @@
     }
 
     /* Certificate */
-    
+
     .certificates {
         position: relative;
     }
-    
+
     .certificateContainer {
         gap: 50px;
         padding: 0;
@@ -243,7 +242,7 @@
     .certificateCard {
         margin-right: -110px;
     }
-    
+
     .certificateCard:first-child {
         margin-left: 30px;
     }
@@ -275,7 +274,7 @@
     #connect {
         border-radius: 0;
     }
-    
+
     .contactContainer {
         flex-direction: column-reverse;
     }
@@ -311,12 +310,14 @@
         width: 68%;
     }
 
-    .pre, .next {
+    .pre,
+    .next {
         height: 30%;
     }
 
     /* Contact Section */
-    .contactForm,   .contactDetailsContainer {
+    .contactForm,
+    .contactDetailsContainer {
         width: 20rem;
     }
 }
@@ -343,7 +344,8 @@
         margin-left: 0px;
     }
 
-    .contactForm,   .contactDetailsContainer {
+    .contactForm,
+    .contactDetailsContainer {
         width: 18rem;
     }
 

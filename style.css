@@ -254,10 +254,11 @@ main {
     transform: translateY(-70px);
     border-radius: 12px;
     box-shadow: 0 0 15px ;
+    z-index: 1;
 }
 
 .cardDescription {
-    transform: translateY(-350px);
+    transform: translateY(-200px);
     opacity: 0;
 }
 
@@ -270,21 +271,6 @@ main {
 .cardDescription p{
     font-weight: bold;
     margin-bottom: 10px;
-}
-
-.cardDescription button{
-    border: none;
-    padding: 10px 12px;
-    border-radius: 8px;
-    background-color: #19A7CE;
-    color: #fff;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
-.cardDescription button:hover {
-    background-color: #13657c;
-    transition: 500ms ease;
 }
 
 .card:hover {
@@ -303,6 +289,7 @@ main {
 .card1:hover .cardDescription{
     transform: translateY(-100px);
 }
+
 
 /* Certificates */
 
