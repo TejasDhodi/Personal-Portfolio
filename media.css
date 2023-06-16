@@ -1,0 +1,353 @@
+@media screen and (max-width: 1025px) {
+
+    /* Navbar Section */
+    .navItems {
+        gap: 30px;
+    }
+
+    /* about section */
+    .aboutDescription p:first-child {
+        font-size: 1.7rem;
+    }
+
+    .aboutImg {
+        width: 900px;
+    }
+
+    /* Project Section */
+   
+
+    /* Certificate Section */
+    .certificateCard:first-child {
+        margin-left: -60px;
+    }
+
+    .contactDetailsContainer {
+        width: 25rem;
+        font-size: 1.3rem;
+    }
+
+    /* Contact Section */
+    .contactDetails {
+        gap: 30px;
+    }
+
+    .contactForm {
+        width: 27rem;
+    }
+
+    #connect {
+        border-radius: 23% 0;
+    }
+}
+
+@media screen and (max-width: 769px) {
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .hamburgerMenu {
+        display: initial;
+        width: 2rem;
+        cursor: pointer;
+        align-items: center;
+    }
+
+    .bar {
+        height: 5px;
+        width: 100%;
+        background-color: #000;
+        display: block;
+        border-radius: 5px;
+        transition: 300ms ease;
+    }
+
+    #bar1 {
+        transform: translateY(-4px);
+    }
+
+    #bar3 {
+        transform: translateY(4px);
+    }
+
+    .toggleHamb {
+        display: block;
+    }
+
+    .toggleHamb #bar1 {
+        transform: translateY(4px) rotateZ(-45deg);
+    }
+
+    .toggleHamb #bar2 {
+        opacity: 0;
+    }
+
+    .toggleHamb #bar3 {
+        transform: translateY(-6px) rotateZ(45deg);
+    }
+
+    .navItems {
+        flex-direction: column;
+        background-color: #8ad4e8;
+        top: 5rem;
+        right: 0;
+        height: 100vh;
+        width: 0;
+        padding: 40px 0;
+        transition: 500ms ease;
+        position: absolute;
+    }
+
+    .showNav {
+        width: 15rem;
+        padding: 40px 30px;
+    }
+
+
+    main {
+        margin: 0 8%;
+    }
+
+    .personalDetails h4 {
+        font-size: 1.5em;
+    }
+
+    .personalDetails h2 {
+        font-size: 1.7rem;
+    }
+
+    .personalDetails h1 {
+        font-size: 2rem;
+    }
+
+    .introContainer .socialIcons i {
+        padding: 10px;
+    }
+
+    /* About Section */
+
+    .aboutImg {
+        width: 100rem;
+        height: 450px;
+    }
+
+    .aboutDescription p:first-child {
+        font-size: 1.5rem;
+    }
+
+    /* Projects */
+
+    .cardContainer {
+        justify-content: center;
+    }
+
+    .card {
+        width: 22rem;
+    }
+
+    .card3:hover .cardDescription {
+        transform: translateY(-160px);
+    }
+
+    /* Contact Section */
+    #connect {
+        border-radius: 0 25%;
+    }
+
+    .cardContainer {
+        gap: 30px;
+    }
+
+    .contactDetailsContainer {
+        width: 22rem;
+        height: 22rem;
+        font-size: 1.1rem;
+        padding: 50px 20px;
+    }
+
+    .contactForm {
+        width: 22rem;
+        height: 35rem;
+        padding: 20px;
+    }
+
+}
+
+@media screen and (max-width: 431px) {
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .showNav {
+        width: 100%;
+        align-items: center;
+        padding: 60px 30px;
+        font-size: 1.7rem;
+    }
+
+    #Intro {
+        margin-top: 30%;
+    }
+
+    .introContainer {
+        flex-direction: column-reverse;
+    }
+
+    .personalDetails {
+        text-align: center;
+    }
+
+    .introContainer .socialIcons {
+        justify-content: center;
+    }
+
+    .sideImg {
+        height: 300px;
+    }
+
+    /* About Section */
+    .aboutTitle h1 {
+        text-align: center;
+    }
+    .aboutContainer {
+        flex-direction: column;
+    }
+
+    .aboutImg {
+        width: 320px;
+        height: 310px;
+    }
+
+    .aboutDescription p {
+        text-align: justify;
+    }
+
+    /* Certificate */
+    
+    .certificates {
+        position: relative;
+    }
+    
+    .certificateContainer {
+        gap: 50px;
+        padding: 0;
+    }
+
+    .certificateCard {
+        margin-right: -110px;
+    }
+    
+    .certificateCard:first-child {
+        margin-left: 30px;
+    }
+
+    .certificateImage {
+        width: 75%;
+        height: 250px;
+    }
+
+    .certificateInfo {
+        width: 75%;
+    }
+
+    .personalDetails h1,
+    h2,
+    h4,
+    span {
+        font-size: 1.5rem;
+    }
+
+    .pre,
+    .next {
+        width: 3vw;
+        height: 40%;
+        position: absolute;
+    }
+
+    /* Contact Section */
+    #connect {
+        border-radius: 0;
+    }
+    
+    .contactContainer {
+        flex-direction: column-reverse;
+    }
+
+}
+
+@media screen and (max-width: 376px) {
+    #Intro {
+        margin-top: 34%;
+    }
+
+    /* Project Section */
+    .card {
+        width: 18rem;
+    }
+
+    /* Certificate Section */
+    .certificateContainer {
+        gap: 20px;
+    }
+
+    .certificateImage {
+        width: 70%;
+        height: 200px;
+        box-shadow: 5px 5px 15px;
+    }
+
+    .certificateCard:first-child {
+        margin-left: 10px;
+    }
+
+    .certificateInfo {
+        width: 68%;
+    }
+
+    .pre, .next {
+        height: 30%;
+    }
+
+    /* Contact Section */
+    .contactForm,   .contactDetailsContainer {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width:321px) {
+    main {
+        margin: 0 3%;
+    }
+
+    .aboutImg {
+        width: 280px;
+        height: 310px;
+    }
+
+    .certificateContainer {
+        gap: 0px;
+    }
+
+    .certificateImage {
+        width: 60%;
+    }
+
+    .certificateCard:first-child {
+        margin-left: 0px;
+    }
+
+    .contactForm,   .contactDetailsContainer {
+        width: 18rem;
+    }
+
+    .contactDetailsContainer {
+        font-size: 1rem;
+    }
+}

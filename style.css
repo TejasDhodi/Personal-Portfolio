@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Quicksand&family=Ubuntu+Mono&family=Ubuntu:wght@300;500;700&disp');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    /* font-family: 'Fjalla One', sans-serif;
+    font-family: 'Quicksand', sans-serif; */
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu Mono', monospace;
+    scroll-behavior: smooth;
+}
+
+
+/* Reusable Contents */
+
+.buttons {
+    border: none;
+    padding: 10px 12px;
+    border-radius: 8px;
+    background-color: #19A7CE;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.buttons:hover {
+    background-color: #13657c;
+    transition: 500ms ease;
+}
+
+.title {
+    text-align: center;
+    font-size: 3.1rem;
+    font-weight: bold;
+    color: #19A7CE;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #8ad4e8;
+    width: 100%;
+    height: 88px;
+    padding: 20px;
+    box-shadow: 0 0 15px;
+    position: fixed;
+    z-index: 20;
+}
+
+.navItems {
+    display: flex;
+    gap: 50px;
+    font-size: 1.3rem;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+.navItems .navList:hover {
+    opacity: 0.7;
+    transition: 0.7s ease;
+}
+
+.hamburgerMenu {
+    display: none;
+}
+
+/* Main Container */
+main {
+    margin: 0 13%;
+    overflow: hidden;
+}
+
+/* Introduction Section */
+#Intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15% 0 8%;
+}
+
+.introContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.personalDetails h4, h2, h1 {
+    color: #024658;
+    /* opacity: 0.5; */
+}
+
+.personalDetails h4 {
+    font-size: 1.5em;
+}
+
+.personalDetails h2 {
+    font-size: 2rem;
+}
+
+.personalDetails h1 {
+    font-size: 2.5rem;
+}
+
+.introActions {
+    margin: 20px 0;
+}
+
+.introContainer .socialIcons {
+    display: flex;
+    align-items: center;
+}
+
+.introContainer .socialIcons i {
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: 500ms ease;
+}
+
+.insta {
+    color: rgb(193, 37, 5);
+}
+
+.facebook {
+    color: rgb(10, 83, 147);
+}
+
+.linkedin {
+    color: rgb(11, 165, 231);
+}
+
+.introContainer .socialIcons i:hover {
+    background: #19A7CE;
+    color: #fff;
+}
+
+.sideImg {
+    height: 400px;
+    width: 350px;
+}
+
+.sideImg img{
+    height: 100%;
+    width: 100%;
+}
+
+/* About Section */
+#about {
+    margin: 8rem 0;
+}
+
+.aboutTitle h1{
+    font-size: 3.1rem;
+    font-weight: bold;
+    color: #19A7CE;
+
+}
+.aboutContainer {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+
+.aboutImg {
+    width: 700px;
+    height: 450px;
+}
+
+.aboutImg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px;
+}
+
+.aboutDescription p:first-child{
+    margin-top: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(19, 10, 10);
+}
+
+.skills {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.skills h2{
+    font-weight: bold;
+    color: #19A7CE;
+    margin: 10px 0;
+}
+
+.skills i{
+    font-size: 1rem;
+    color: #19A7CE;
+}
+
+.skills li{
+    font-size: 1.5rem;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+.resumeBtn {
+    margin: 20px 0;
+}
+
+/* Project Section */
+
+#project {
+    margin-bottom: 8rem;
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    margin-top: 6.3rem;
+    width: 350px;
+    height: 150px;
+    padding: 20px;
+    position: relative;
+    border-radius: 12px;
+    transition: 1000ms ease;
+    box-shadow: 0 0 15px ;
+}
+
+.cardImg {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.cardImg img {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    transform: translateY(-70px);
+    border-radius: 12px;
+    box-shadow: 0 0 15px ;
+}
+
+.cardDescription {
+    transform: translateY(-350px);
+    opacity: 0;
+}
+
+.cardDescription h3{
+    font-weight: bold;
+    color:rgb(75, 166, 166);
+    margin-bottom: 10px;
+}
+
+.cardDescription p{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cardDescription button{
+    border: none;
+    padding: 10px 12px;
+    border-radius: 8px;
+    background-color: #19A7CE;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.cardDescription button:hover {
+    background-color: #13657c;
+    transition: 500ms ease;
+}
+
+.card:hover {
+    height: 300px;
+}
+
+.card1:hover {
+    height: 230px;
+}
+
+.card:hover .cardDescription{
+    transform: translateY(-150px);
+    opacity: 1;
+}
+
+.card1:hover .cardDescription{
+    transform: translateY(-100px);
+}
+
+/* Certificates */
+
+.certificates {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+
+.certificates h1 {
+    margin: 50px 0;
+}
+  .certificateContainer {
+    padding: 0 10%;
+    display: flex;
+    overflow: auto;
+    scroll-behavior: smooth;
+  }
+  
+  .certificateContainer::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .certificateCard {
+    flex: 0 0 auto;
+    width: 450px;
+    height: 450px;
+    margin-right: 50px;
+  }
+  
+  .certificateCard:first-child {
+    margin-left: -130px;
+  }
+  
+  .certificateImage {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-shadow: 0 0 15px;
+  }
+  
+  .certificateThumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .certificateInfo {
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+  }
+  
+  .pre,
+  .next {
+    border: none;
+    /* width: 10vw; */
+    height: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 9;
+    font-size: 3rem;
+  }
+  
+  .pre {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+
+/* Contact Information */
+
+#connect {
+    margin: 7% 0 0;
+    background-color: rgb(214, 214, 214);
+    padding: 50px 0;
+    border-radius: 30% 0;
+}
+
+.connectTitle {
+    margin-bottom: 50px;
+}
+
+.connectTitle p{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #363636;
+}
+
+.contactContainer {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
+.contactDetailsContainer {
+    height: 25rem;
+    width: 30rem;
+    background-color: #53aac2;
+    color: #fff;
+    box-shadow: 0 0 15px ;
+    padding: 50px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+}
+
+.contactDetails {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px ;
+}
+
+.contactDetailsIcon i {
+    padding: 15px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+
+
+/* Form */
+.contactForm {
+    height: 35rem;
+    width: 30rem;
+    box-shadow: 0 0 15px ;
+    padding: 50px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+}
+
+.input {
+    margin: 10px 0;
+}
+
+.input label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0b323d;
+}
+.input input {
+    height: 3rem;
+    width: 100%;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 12px;
+}
+
+.input textarea {
+    width: 100%;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 12px;
+}
+
+.submitBtn  {
+    text-align: center;
+}
+
+.submitBtn button {
+    width: 50%;
+    padding: 12px 15px;
+    
+}
+
+/* Footer Section */
+#mainFooter {
+    color: #fff;
+    background-image: linear-gradient(rgba(9,5,0,2), rgba(2, 5, 32, 1));
+    padding: 20px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#mainFooter h4{
+    font-size: 1.3rem;
+}
+
+#mainFooter h3{
+    font-size: 1.5rem;
+}
+
+#mainFooter p{
+    font-size: 1rem;
+}
+ .socialIcons i{
+    font-size: 1.3rem;
+    margin: 0 10px;
+    cursor: pointer;
+ }
