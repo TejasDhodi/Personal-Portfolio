@@ -15,6 +15,9 @@
 
 
 /* Reusable Contents */
+main section:nth-child(2){
+    background-color: #e4e4e4;
+}
 
 .buttons {
     border: none;
@@ -229,9 +232,8 @@
 /* Project Section */
 
 #project {
-    padding-top: 5.5rem;
+    padding: 5.5rem 0;
     height: auto;
-    background-color: #fcb1b1;
 }
 
 .cardContainer {
