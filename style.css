@@ -96,7 +96,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
+    height: auto;
 }
 
 .personalDetails h4, h2, h1 {
@@ -174,7 +174,7 @@
     justify-content: space-between;
     flex-direction: row-reverse;
     align-items: center;
-    height: 100vh;
+    height: auto;
     margin: 0.5rem 0 0;
 }
 
@@ -230,7 +230,7 @@
 
 #project {
     padding-top: 5.5rem;
-    height: 100vh;
+    height: auto;
     background-color: #fcb1b1;
 }
 
