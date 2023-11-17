@@ -49,6 +49,7 @@
     padding: 20px;
     box-shadow: 0 0 15px;
     position: fixed;
+    top: 0;
     z-index: 20;
 }
 
@@ -65,13 +66,21 @@
     transition: 0.7s ease;
 }
 
+.navLink {
+    color: #000;
+}
+
 .hamburgerMenu {
     display: none;
 }
 
+.active {
+    color: #0c3a5c;
+}
+
 /* Main Container */
-main {
-    margin: 0 13%;
+.main {
+    padding: 0 13%;
     overflow: hidden;
 }
 
@@ -80,13 +89,14 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 15% 0 8%;
+    /* margin: 15% 0 8%; */
 }
 
 .introContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100vh;
 }
 
 .personalDetails h4, h2, h1 {
@@ -151,9 +161,6 @@ main {
 }
 
 /* About Section */
-#about {
-    margin: 8rem 0;
-}
 
 .aboutTitle h1{
     font-size: 3.1rem;
@@ -167,6 +174,8 @@ main {
     justify-content: space-between;
     flex-direction: row-reverse;
     align-items: center;
+    height: 100vh;
+    margin: 0.5rem 0 0;
 }
 
 
@@ -220,7 +229,9 @@ main {
 /* Project Section */
 
 #project {
-    margin-bottom: 8rem;
+    padding-top: 5.5rem;
+    height: 100vh;
+    background-color: #fcb1b1;
 }
 
 .cardContainer {
@@ -285,6 +296,7 @@ main {
     transform: translateY(-150px);
     opacity: 1;
 }
+
 
 .card1:hover .cardDescription{
     transform: translateY(-100px);
@@ -371,9 +383,9 @@ main {
 /* Contact Information */
 
 #connect {
-    margin: 7% 0 0;
+    /* margin: 10% 0 0; */
     background-color: rgb(214, 214, 214);
-    padding: 50px 0;
+    padding: 6rem 0;
     border-radius: 30% 0;
 }
 

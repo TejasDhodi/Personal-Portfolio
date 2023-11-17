@@ -1,3 +1,42 @@
+/* @media screen and(max-width:1441px) {
+    .card {
+        width: 330px;
+    }
+} */
+
+@media screen and (max-width: 1441px) {
+
+    /* Project Section */
+
+    .card {
+        width: 330px;
+    }
+}
+
+@media screen and (max-width: 1281px) {
+
+    /* Project Section */
+
+    #project {
+        height: 105vh;
+    }
+
+    .card {
+        width: 295px;
+    }
+
+    .card:last-child:hover   {
+        height: 250px;
+    }
+
+    .card:first-child:hover .cardDescription{
+        transform: translateY(-170px);
+    }
+    .card:last-child:hover .cardDescription{
+        transform: translateY(-125px);
+    }
+}
+
 @media screen and (max-width: 1025px) {
 
     /* Navbar Section */
@@ -16,6 +55,12 @@
 
     /* Project Section */
 
+    #project {
+        height: auto;
+    }
+    .card {
+        width: 355px;
+    }
 
     /* Certificate Section */
     .certificateCard:first-child {
@@ -41,7 +86,7 @@
     }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 835px) {
 
     .navbar {
         justify-content: space-between;
@@ -104,8 +149,8 @@
     }
 
 
-    main {
-        margin: 0 8%;
+    .main {
+        padding: 0 8%;
     }
 
     .personalDetails h4 {
@@ -120,37 +165,29 @@
         font-size: 2rem;
     }
 
+    .introContainer {
+        margin: 3rem 0 0;
+    }
+
     .introContainer .socialIcons i {
         padding: 10px;
     }
 
-    /* About Section */
+    /* About */
 
-    .aboutImg {
-        width: 100rem;
-        height: 450px;
-    }
-
-    .aboutDescription p:first-child {
-        font-size: 1.5rem;
+    .aboutContainer {
+        height: 130vh;
+        margin: 0;
     }
 
     /* Projects */
 
-    .cardContainer {
-        justify-content: center;
-    }
-
     .card {
-        width: 22rem;
-    }
-
-    .card3:hover .cardDescription {
-        transform: translateY(-175px);
+        width: 330px;
     }
 
     /* Contact Section */
-    #connect {
+     #connect {
         border-radius: 0 25%;
     }
 
@@ -169,11 +206,29 @@
         width: 22rem;
         height: 35rem;
         padding: 20px;
-    }
+    } 
 
 }
 
-@media screen and (max-width: 431px) {
+@media screen and (max-width: 769px) {
+    .main {
+        padding: 0 4%;
+    }
+
+    /* Project */
+    .card {
+        width: 300px;
+    }
+
+    /* Connect */
+    .contactDetailsContainer {
+        width: 20rem;
+    }
+
+
+}
+
+@media screen and (max-width: 481px) {
 
     html,
     body {
@@ -190,8 +245,12 @@
         font-size: 1.7rem;
     }
 
+    .navLink {
+        font-size: 1.5rem;
+    }
+
     #Intro {
-        margin-top: 30%;
+        margin-top: 10%;
     }
 
     .introContainer {
@@ -200,6 +259,7 @@
 
     .personalDetails {
         text-align: center;
+        margin-bottom: 2.1rem;
     }
 
     .introContainer .socialIcons {
@@ -217,6 +277,8 @@
 
     .aboutContainer {
         flex-direction: column;
+        height: auto;
+        padding: 5.5rem 0 3rem
     }
 
     .aboutImg {
@@ -226,6 +288,19 @@
 
     .aboutDescription p {
         text-align: justify;
+    }
+
+    .aboutDescription p:first-child {
+        font-size: 1.4rem;
+    }
+
+    /* Project */
+    #project {
+        padding-bottom: 3rem;
+    }
+
+    .card {
+        width: 360px;
     }
 
     /* Certificate */
@@ -283,7 +358,7 @@
 
 @media screen and (max-width: 376px) {
     #Intro {
-        margin-top: 34%;
+        margin-top: 12%;
     }
 
     /* Project Section */
@@ -323,8 +398,8 @@
 }
 
 @media screen and (max-width:321px) {
-    main {
-        margin: 0 3%;
+    .main {
+        padding: 0 3%;
     }
 
     .aboutImg {

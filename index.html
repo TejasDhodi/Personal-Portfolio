@@ -18,18 +18,14 @@
             </div>
 
             <ul class="navItems">
-                <li class="navList" onclick="window.location.href='#Intro'"><i class="fa-solid fa-house"></i> Home</li>
-                <li class="navList" onclick="window.location.href='#about'"><i class="fa-solid fa-address-card"></i>
-                    About</li>
-                <li class="navList" onclick="window.location.href='#project'"><i class="fa-solid fa-folder-open"></i>
-                    Projects</li>
-                <li class="navList" onclick="window.location.href='#certificatesSection'"><i
-                        class="fa-solid fa-trophy"></i> Certificates</li>
-                <li class="navList" onclick="window.location.assign('https://www.levelupcoding.in')"><i
-                        class="fa-solid fa-pen"></i> Blogs</li>
-                <li class="navList" onclick="window.location.href='#connect'"><i class="fa-solid fa-address-book"></i>
-                    Connect</li>
+                <li class="navList"><a href="#Intro" class="navLink active" onclick="activeClass(e)"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li class="navList"><a href="#about" class="navLink" onclick="activeClass(e)"><i class="fa-solid fa-address-card"></i> About</a></li>
+                <li class="navList"><a href="#project" class="navLink" onclick="activeClass(e)"><i class="fa-solid fa-folder-open"></i> Projects</a></li>
+                <li class="navList"><a href="#certificatesSection" class="navLink" onclick="activeClass(e)"><i class="fa-solid fa-trophy"></i> Certificates</a></li>
+                <li class="navList"><a href="https://www.levelupcoding.in" class="navLink" onclick="activeClass(e)"><i class="fa-solid fa-pen"></i> Blogs</a></li>
+                <li class="navList"><a href="#connect" class="navLink" onclick="activeClass(e)"><i class="fa-solid fa-address-book"></i> Connect</a></li>
             </ul>
+            
 
             <div class="hamburgerMenu">
                 <div id="bar1" class="bar"></div>
@@ -40,7 +36,7 @@
     </header>
 
     <main>
-        <section id="Intro">
+        <section id="Intro" class="main">
             <div class="introContainer">
                 <div class="personalDetails">
                     <h4>This is</h4>
@@ -72,7 +68,7 @@
             </div>
         </section>
 
-        <section id="about">
+        <section id="about" class="main">
             <div class="aboutContainer scalePopup">
                 <div class="aboutMe">
                     <div class="aboutTitle">
@@ -97,8 +93,8 @@
                         </ul>
 
                         <div class="resumeBtn">
-                            <a class="buttons" href="images/Resume/Resume Job.pdf"
-                                download="images/Resume/Resume.pdf"><i class="fa-solid fa-file"></i> Download
+                            <a class="buttons" href="images/Resume/Resume (2).pdf"
+                                download="images/Resume/Resume (2).pdf"><i class="fa-solid fa-file"></i> Download
                                 CV</a>
                         </div>
                     </div>
@@ -110,7 +106,7 @@
             </div>
         </section>
 
-        <section id="project">
+        <section id="project" class="main">
             <div class="projectTitle ">
                 <h1 class="title">Projects</h1>
             </div>
@@ -193,9 +189,6 @@
                 </div>
             </div>
         </section>
-    </main>
-
-    <footer>
 
         <section id="certificatesSection">
             <div class="certificates">
@@ -286,8 +279,10 @@
                 </div>
             </div>
         </section>
+    </main>
 
-
+    <footer>
+        
         <section id="connect">
             <div class="connectTitle">
                 <h1 class="title">Connect With Me</h1>
